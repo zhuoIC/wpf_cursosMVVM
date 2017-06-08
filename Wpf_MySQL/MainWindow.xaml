@@ -1,0 +1,18 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:NHJ" x:Class="NHJ.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:CursoMVVM/>
+    </Window.DataContext>
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="216" Width="497" ItemsSource="{Binding ListaCursos}" SelectedItem="{Binding CursoSeleccionado}"/>
+        <Button Content="Conectar" HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Conectar_Click, Mode=OneWay}" IsEnabled="{Binding Desconectado, Mode=OneWay}"/>
+        <Label Content="{Binding Mensaje}" HorizontalAlignment="Left" Margin="326,265,0,0" VerticalAlignment="Top"/>
+        <Button Content="Desconectar" HorizontalAlignment="Left" Margin="208,267,0,0" VerticalAlignment="Top"  IsEnabled="{Binding Conectado, Mode=OneWay}" Command="{Binding Desconectar_Click, Mode=OneWay}"/>
+        <Button Content="Listar cursos" HorizontalAlignment="Left" Margin="106,267,0,0" VerticalAlignment="Top" Width="75" IsEnabled="{Binding Conectado, Mode=OneWay}" Command="{Binding Listar_Click, Mode=OneWay}"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="106,241,0,0" VerticalAlignment="Top" Width="75" IsEnabled="{Binding CursoNoSeleccionado, Mode=OneWay}" Command="{Binding Borrar_Click, Mode=OneWay}"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_MySQL", "Wpf_MySQL\Wpf_MySQL.csproj", "{EDFBD4D0-FB5D-42BC-BD09-14C0A1619ABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDFBD4D0-FB5D-42BC-BD09-14C0A1619ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFBD4D0-FB5D-42BC-BD09-14C0A1619ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFBD4D0-FB5D-42BC-BD09-14C0A1619ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFBD4D0-FB5D-42BC-BD09-14C0A1619ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
